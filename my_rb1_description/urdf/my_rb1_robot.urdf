@@ -4,9 +4,9 @@
     <!-- Link - base -->
     <link name="link_base">
         <inertial>
-            <mass value="10" />
+            <mass value="22" />
             <origin xyz="0 0 0.3" rpy="0 0 0" />
-            <inertia ixx="1.5417" ixy="0" ixz="0" iyy="3.467" iyz="0" izz="4.742" />
+            <inertia ixx="0.50875" ixy="0" ixz="0" iyy="0.50875" iyz="0" izz="0.6875" />
         </inertial>
 
         <collision>
@@ -36,9 +36,9 @@
     <!-- Link - front caster -->
     <link name="link_front_caster">
         <inertial>
-            <mass value="1" />
+            <mass value="0.5" />
             <origin xyz="0 0 0" rpy="0 0 0" />
-            <inertia ixx="0.002526666666667" ixy="0" ixz="0" iyy="0.002526666666667" iyz="0" izz="0.005"/>
+            <inertia ixx="0.000125" ixy="0" ixz="0" iyy="0.000125" iyz="0" izz="0.000125"/>
         </inertial>
         <!-- Front caster support -->
         <collision>
@@ -88,9 +88,9 @@
     <!-- Link - back caster -->
     <link name="link_back_caster">
         <inertial>
-            <mass value="1" />
+            <mass value="0.5" />
             <origin xyz="0 0 0" rpy="0 0 0" />
-            <inertia ixx="0.002526666666667" ixy="0" ixz="0" iyy="0.002526666666667" iyz="0" izz="0.005"/>
+            <inertia ixx="0.000125" ixy="0" ixz="0" iyy="0.000125" iyz="0" izz="0.000125"/>
         </inertial>
         <!-- Back caster support -->
         <collision>
@@ -147,7 +147,7 @@
         <inertial>
             <mass value="1" />
             <origin xyz="0 0 0" rpy="0 0 0" />
-            <inertia ixx="0.002526666666667" ixy="0" ixz="0" iyy="0.002526666666667" iyz="0" izz="0.005"/>
+            <inertia ixx="0.00023125" ixy="0" ixz="0" iyy="0.00023125" iyz="0" izz="0.0003125"/>
         </inertial>
         <!-- Tires -->
         <collision>
@@ -184,7 +184,7 @@
         <inertial>
             <mass value="1" />
             <origin xyz="0 0 0" rpy="0 0 0" />
-            <inertia ixx="0.002526666666667" ixy="0" ixz="0" iyy="0.002526666666667" iyz="0" izz="0.005"/>
+            <inertia ixx="0.00023125" ixy="0" ixz="0" iyy="0.00023125" iyz="0" izz="0.0003125"/>
         </inertial>
         <!-- Tires -->
         <collision>
@@ -224,8 +224,8 @@
     <link name="link_front_laser">
         <inertial>
             <origin xyz="0 0 0" rpy="0 0 0" />
-            <mass value="0.5" />
-            <inertia ixx="0.000252666666667" ixy="0" ixz="0" iyy="0.000252666666667" iyz="0" izz="0.0005"/>
+            <mass value="0" />
+            <inertia ixx="0" ixy="0" ixz="0" iyy="0" iyz="0" izz="0"/>
         </inertial>
         <visual>
             <origin xyz="0 0 0" rpy="0 0 0" />
