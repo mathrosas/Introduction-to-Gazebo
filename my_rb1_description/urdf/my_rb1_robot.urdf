@@ -206,14 +206,6 @@
         </visual>
     </link>
 
-    <!-- Gazebo tags - Laser scan -->
-    <gazebo reference="joint_front_laser">
-        <preserveFixedJoint>true</preserveFixedJoint>
-    </gazebo>
-    <gazebo reference="link_front_laser">
-        <material>Gazebo/DarkGrey</material>
-    </gazebo>
-
     <!-- Laser scan -->
     <joint name="joint_front_laser" type="fixed">
         <origin rpy="3.14159 0 0" xyz="0.25 0 0.075" />
@@ -274,4 +266,28 @@
             </geometry>
         </collision>
     </link>
+
+    <gazebo reference="link_base">
+        <material>Gazebo/Black</material>
+    </gazebo>
+
+    <gazebo reference="link_front_caster">
+        <material>Gazebo/Grey</material>
+    </gazebo>
+
+    <gazebo reference="link_back_caster">
+        <material>Gazebo/Grey</material>
+    </gazebo>
+
+    <gazebo reference="link_left_wheel">
+        <material>Gazebo/Red</material>
+    </gazebo>
+
+    <gazebo reference="link_right_wheel">
+        <material>Gazebo/Red</material>
+    </gazebo>
+
+    <gazebo reference="link_front_laser">
+        <material>Gazebo/Orange</material>
+    </gazebo>
 </robot>
