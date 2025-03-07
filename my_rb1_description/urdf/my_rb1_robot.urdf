@@ -28,7 +28,7 @@
 
     <!-- Joint - front caster -->
     <joint name="joint_base_front_caster" type="fixed">
-        <origin rpy="0 0 0" xyz="0.1 0 -0.15" />
+        <origin rpy="0 0 0" xyz="0.2 0 -0.15" />
         <child link="link_front_caster" />
         <parent link="link_base" />
         <joint_properties damping="1.0" friction="0.0" />
@@ -80,7 +80,7 @@
 
     <!-- Joint - back caster -->
     <joint name="joint_base_back_caster" type="fixed">
-        <origin rpy="0 0 0" xyz="-0.1 0 -0.15" />
+        <origin rpy="0 0 0" xyz="-0.2 0 -0.15" />
         <child link="link_back_caster" />
         <parent link="link_base" />
         <joint_properties damping="1.0" friction="0.0" />
@@ -301,7 +301,7 @@
             <wheelSeparation>0.4</wheelSeparation>
             <wheelDiameter>0.05</wheelDiameter>
             <robotBaseFrame>link_base</robotBaseFrame>
-            <torque>20</torque>
+            <torque>5</torque>
             <commandTopic>cmd_vel</commandTopic>
             <odometryTopic>odom</odometryTopic>
             <broadcastTF>false</broadcastTF>
