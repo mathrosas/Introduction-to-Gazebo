@@ -53,7 +53,7 @@ class RotateRobotService:
                       (start_yaw, target_yaw))
 
         twist = Twist()
-        angular_speed = 0.3  # rad/s (a moderate rotation speed)
+        angular_speed = 0.5  # rad/s (a moderate rotation speed)
         rate = rospy.Rate(10) # 10 Hz
 
         while not rospy.is_shutdown():
